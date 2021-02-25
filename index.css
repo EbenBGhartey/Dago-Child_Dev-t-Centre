@@ -26,7 +26,15 @@
     border-left: 3px solid #15b000;
     border-radius: 40px;
 }
+#announce{
+font-size: 17px;
+padding: 6px;
+}
 
+#Events{
+font-size: 17px;
+padding: 6px;
+}
 /*share page*/
      #share{
   font-size: 30px;
@@ -59,10 +67,17 @@ margin-bottom: 30px;
   border-radius: 100%;
   
 }
-#share4{
+/*#share4{
   margin-left: 15px;
   background-color: #DD4B39;
   color:#fff; 
+  padding: 8px;
+  border-radius: 100%;
+}*/
+#share4{
+  margin-left: 15px;
+  background-color: #3B5998;
+  color:#fff;
   padding: 8px;
   border-radius: 100%;
 }
@@ -200,7 +215,7 @@ p {
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    background: #000;
+    background: #55ACEE;
     margin-right: 5px;
     color: #fff; }
     .dk-footer-box-info .footer-social-link a i.fa-facebook {

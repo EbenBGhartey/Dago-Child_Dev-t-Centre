@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>staff</title>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+<!-- 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/modernizer.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="bootsnipp.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+<style type="text/css">
+    /* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0B2471;
+    border-color: #0B2471;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+/*    color: #0B2471;
+    margin-bottom: 50px;*/
+    /*text-transform: uppercase;*/
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #0B2471 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #0B2471 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+
+
+      <nav id="nav" class="navbar navbar-expand-lg navStyle" style="background-color: #0B2471;">
+            <a class="brand-navbar" href="#"><img src="img/compassion3.jpg" alt="Responsive image" height="60px" width="180px"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+                <span><i class="fas fa-align-right iconStyle"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul id="list" class="navbar-nav ml-auto navList">
+                    <li class="nav-item active"><a href="index.html" class="nav-link"><i class="fas fa-home"></i>HOME<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item">
+                        <a href="index.html #services" class="nav-link"><i class="fas fa-cogs"></i>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#activities" class="nav-link"><i class="fas fa-briefcase"></i>Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="staff.html" class="nav-link"><i class="fas fa-phone"></i>Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html #about" class="nav-link"><i class="fas fa-users"></i>About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html #faq" class="nav-link" ><i class="fas fa-envelope"></i>Faq</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><i class="fas fa-picture-o"></i>Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!--  <div id="section1" class="container-fluid" style="padding-top:40px;padding-bottom:40px; background-color: #eef2f7; text-align: center;">
+    <h1>Contact Us</h1>
+    <p>Get Friendly Help From Us</p>
+    <i class="fa fa-facebook" style="color:#fff;background-color: #1a4b75; font-size: 35px; padding: 8px;"></i>
+    <i class="fa fa-skype" style="color:#fff;background-color: #1a4b75; font-size: 35px; padding: 8px;"></i>
+    <i class="fa fa-twitter" style="color:#fff;background-color: #1a4b75; font-size: 35px; padding: 8px;"></i>
+  </div> -->
+
+
+
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div id="section1" class="container-fluid" style="padding-top:40px;padding-bottom:40px; margin-top:-60px; text-align: center;"> 
+        <h1>Contact Us</h1>
+    <p>Get Friendly Help From Us</p>
+    <i class="fa fa-facebook" style="color:#fff;background-color: #1a4b75; font-size: 35px; padding: 8px;"></i>
+    <i class="fa fa-skype" style="color:#fff;background-color: #1a4b75; font-size: 35px; padding: 8px;"></i>
+    <i class="fa fa-twitter" style="color:#fff;background-color: #1a4b75; font-size: 35px; padding: 8px;"></i>
+    <h1 class="section-title h1">Our Team</h1>
+        
+        <div class="row"></div></div>
+            <!-- Team member -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Mr.Ebenezer Baisie Ghartey</h3>
+                                    <p><img class=" img-fluid" src="img/ebg3.jpg" alt="card image"></p>
+                                    <h4 class="card-title">CPC Chairman</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h3 class="card-title">CPC Chairman</h3>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <p>2009 - current</p>
+                                    
+                                             <p style="margin-top: -5px;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0553414573</p>
+                                            
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Mr. Anthony Eyiah Quansah</h3>
+                                    <p><img class=" img-fluid" src="img/anthony.jpg" alt="card image"></p>
+                                    <h4 class="card-title">CPC Vice Chairman</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h3 class="card-title">CPC Vice Chairman</h3>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+
+                                    <p>2009 - current</p>
+                                    
+                                             <p style="margin-top: -5px;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0553414573</p>
+
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class=" col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Mr. Stephen Quansah</h3>
+                                    <p><img class=" img-fluid" src="img/steve.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Project Director</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h3 class="card-title">Project Director</h3>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    
+                                    <p>2009 - current</p>
+                                    
+                                             <p style="margin-top: -5px;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0553414573</p>
+
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Mr. Daniel Forson</h3>
+                                    <p><img class=" img-fluid" src="img/danny.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Accountant</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h3 class="card-title">Accountant</h3>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+
+                                    <p>2009 - current</p>
+                                    
+                                             <p style="margin-top: -5px;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0553414573</p>
+
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Mr. Obed Sam</h3>
+                                    <p><img class=" img-fluid" src="img/obed1.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Health Worker</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h3 class="card-title">Health Worker</h3>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+
+                                    <p>2009 - current</p>
+                                    
+                                             <p style="margin-top: -5px;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0553414573</p>
+
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Mrs. Joana Ninson</h3>
+                                    <p><img class=" img-fluid" src="img/joan1.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Social Welfare</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h3 class="card-title">Social Welfare</h3>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+
+                                    <p>2009 - current</p>
+                                    
+                                             <p style="margin-top: -5px;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0553414573</p>
+
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+
+<div class="container" id="shareme" style="">
+    <hr>
+    <div class="row" id="shared" >
+    <strong  style="text-align:center; font-family: Arial Rounded MT Bold">Share This Page</strong>
+    </div>
+    <ul class="row"  id="share">
+    
+    <i class="fa fa-facebook" id="share1"></i>
+    <i class="fa fa-twitter" id="share2"></i>
+    <i class="fa fa-instagram" id="share3"></i>
+    <i class="fa fa-google-plus" id="share4"></i>
+   </ul>
+       <hr>
+    </div>
+</section>
+<!-- Team -->
+
+   <footer  class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="forms.php" class="footer-logo">
+                            <img src="img/compassion5.jpg" alt="footer_logo" class="img-fluid">
+                        </a>
+                        <p class="footer-info-text">Give a child hope for the future and for all eternity. Sponsor a child today!.
+                        </p>
+                        <div class="footer-social-link">
+                            <h4 style="color:#fff">Follow us</h4>
+                            <ul>
+                                <li>
+                                    <a href="www.facebook.com">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="www.twitter.com">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="www.google.com">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="www.instagram.com">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                       <!--  <img src="img/leather.jpg" alt=""> -->
+                        <p>!!Compassion!!</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us"><div class="contact-icon">
+                                   
+                                <a href="https://www.google.com/maps/place/Gomoa+Dago/@5.7009022,-1.1557714,9.65z/data=!4m5!3m4!1s0xfde3b2a90b2cad7:0x8dfbb9bf41f03b8a!8m2!3d5.2278023!4d-0.7919598"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info" style="text-align: center;">
+                                    <h3>Gomoa Dago</h3>
+                                    <p>locate us</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div></a>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info" style="text-align: center;">
+                                    <h3>(+233)553414573</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="index.html #about">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html #services">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="contacts.html">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="contacts.html">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html #faq">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p style="color:#fff;"><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                Subscribe to our page .</p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2019, All Right Reserved DagoCDC</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+          <a href="#" style="color:#fff;">  <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+                
+            </button></a>
+        </div>
+        <!-- End Back to top -->
+</footer>
+
+</body>
+</html>

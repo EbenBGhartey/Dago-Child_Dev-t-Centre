@@ -1291,7 +1291,7 @@ li.social-links a {
     font-weight: 500;
     padding: 0 0 10px;
     margin: 0;
-    line-height: 62px;
+    line-height: 38px;
     margin-top: 0;
     text-transform: none;
 }
@@ -1499,13 +1499,36 @@ hr.invis1 {
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
 }
 */
-.img-center {
+/*.img-center {
     margin: auto;
         margin-top: auto;
     margin-top: 60px;
     height: 590px;
     border-radius: 30% 0% 30% 0%;
+}*/
+
+.img_slider{
+    width:;
+    height: ;
+    background: url(img/compassion24.jpg);
+    margin:100px auto;
+    animation: slide 10s infinite;
 }
+@keyframes slide{
+    25%{
+        background: url(img/compassion24.jpg);
+    }
+    55%{
+        background: url(img/compassion23.jpg);
+    }
+    75%{
+        background: url(img/compassion25.jpg);
+    }
+    100%{
+        background: url(img/compassion14.jpg);
+    }
+}
+
 
 #features li p {
     margin-bottom: 0;
@@ -1563,6 +1586,7 @@ hr.invis1 {
 .features-right li i:hover,
 .features-left li i:hover {
 	background: #fff;
+    color:#15b000;
 }
 
 #features i img {
